@@ -1,0 +1,56 @@
+---
+export interface Props {
+  title: string;
+  album?: string;
+  artist?: string;
+  upc?: string;
+  releaseDate?: string;
+  commentary?: string;
+  lyrics?: string;
+  children?: any;
+}
+
+import Layout from '@/layouts/Layout.astro';
+
+const { title, album, artist, upc, releaseDate, commentary, lyrics, children } = Astro.props;
+---
+
+<Layout title={title}>
+  <header class="mb-8">
+    <h1 class="text-4xl font-bold mb-2">{title}</h1>
+    {album && <p><strong>Album:</strong> {album}</p>}
+    {artist && <p><strong>Artist:</strong> {artist}</p>}
+    {upc && <p><strong>UPC:</strong> {upc}</p>}
+    {releaseDate && <p><strong>Release Date:</strong> {releaseDate}</p>}
+  </header>
+
+  {commentary && (
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold mb-2">EverLight Commentary</h2>
+      <p class="whitespace-pre-wrap">{commentary}</p>
+    </section>
+  )}
+
+  {lyrics && (
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold mb-2">Lyrics</h2>
+      <pre class="whitespace-pre-wrap bg-gray-900 p-4 rounded-lg overflow-x-auto">
+{lyrics}
+      </pre>
+    </section>
+  )}
+
+  {children && (
+    <section class="mb-10">
+      {children}
+    </section>
+  )}
+
+  {album && (
+    <footer class="mt-12">
+      <a href={`/${album}`} class="text-blue-400 hover:underline">
+        ← Return to {album}
+      </a>
+    </footer>
+  )}
+</Layout>

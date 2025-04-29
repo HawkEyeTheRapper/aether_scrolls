@@ -1,0 +1,23 @@
+---
+import LyricPageLayout from '@/layouts/LyricPageLayout.astro';
+import TrackList from '@/components/TrackList.astro';
+
+const tracks = [
+  { title: "Will You Listen", path: "/01_singles/01_will_you_listen" },
+  { title: "Psyops", path: "/01_singles/02_psyops" },
+  { title: "Incantations", path: "/01_singles/03_incantations" },
+  { title: "Mind Kontrol", path: "/01_singles/04_mind_kontrol" },
+  { title: "Return of Kings", path: "/01_singles/05_return_of_kings" },
+  { title: "Politicians", path: "/01_singles/06_politicians" },
+  { title: "The Vow", path: "/01_singles/07_the_vow" },
+];
+---
+
+<LyricPageLayout
+  title="Singles"
+  album="01_singles"
+  artist="Hawk Eye The Rapper"
+  lyrics=""
+>
+  <TrackList {tracks} />
+</LyricPageLayout>

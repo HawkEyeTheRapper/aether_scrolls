@@ -1,0 +1,22 @@
+---
+import LyricPageLayout from '@/layouts/LyricPageLayout.astro';
+import TrackList from '@/components/TrackList.astro';
+
+const tracks = [
+  { title: "Warning Shots", path: "/mixtape_sessions/02_behold_a_pale_horse/01_warning_shots" },
+  { title: "Behold A Pale Horse", path: "/mixtape_sessions/02_behold_a_pale_horse/02_behold_a_pale_horse" },
+  { title: "Kamikaze", path: "/mixtape_sessions/02_behold_a_pale_horse/03_kamikaze" },
+  { title: "Whistleblower", path: "/mixtape_sessions/02_behold_a_pale_horse/04_whistleblower" },
+  { title: "Superstitions", path: "/mixtape_sessions/02_behold_a_pale_horse/05_superstitions" },
+  { title: "Scripture", path: "/mixtape_sessions/02_behold_a_pale_horse/06_scripture" },
+  { title: "Menace To Society", path: "/mixtape_sessions/02_behold_a_pale_horse/07_menace_to_society" },
+  { title: "Semi-Automatic", path: "/mixtape_sessions/02_behold_a_pale_horse/08_semi_automatic" },
+  { title: "Reverse This Curse", path: "/mixtape_sessions/02_behold_a_pale_horse/09_reverse_this_curse" },
+  { title: "K.T.", path: "/mixtape_sessions/02_behold_a_pale_horse/10_kt" },
+  { title: "The Story Celebrated Throughout Time", path: "/mixtape_sessions/02_behold_a_pale_horse/11_the_story_celebrated_throughout_time" },
+];
+---
+
+<LyricPageLayout title="Behold A Pale Horse" album="Milabs" artist="Hawk Eye The Rapper">
+  <TrackList {tracks} />
+</LyricPageLayout>

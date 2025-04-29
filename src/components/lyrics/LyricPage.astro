@@ -1,0 +1,37 @@
+---
+const { title, album, artist, upc, releaseDate, commentary, lyrics } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <title>{title} | {album} - {artist}</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body style="background-color: #0c0c0c; color: #ffffff; font-family: sans-serif; padding: 2rem;">
+    <header style="margin-bottom: 2rem;">
+      <h1 style="font-size: 2rem;">{title}</h1>
+      <p><strong>Album:</strong> {album}</p>
+      <p><strong>Artist:</strong> {artist}</p>
+      {upc && <p><strong>UPC:</strong> {upc}</p>}
+      {releaseDate && <p><strong>Release Date:</strong> {releaseDate}</p>}
+    </header>
+
+    {commentary && (
+      <section style="margin-bottom: 3rem;">
+        <h2 style="font-size: 1.5rem;">EverLight Commentary</h2>
+        <p style="white-space: pre-wrap;">{commentary}</p>
+      </section>
+    )}
+
+    <section>
+      <h2 style="font-size: 1.5rem;">Lyrics</h2>
+      <pre style="white-space: pre-wrap; background: #111; padding: 1rem; border-radius: 8px; overflow-x: auto;">
+{lyrics}
+      </pre>
+    </section>
+
+    <footer style="margin-top: 4rem;">
+      <a href="/02_mixtape_sessions/01_full_disclosure/" style="color: #0af;">← Return to Full Disclosure Album</a>
+    </footer>
+  </body>
+</html>

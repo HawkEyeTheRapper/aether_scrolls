@@ -1,0 +1,19 @@
+---
+export interface Props {
+  tracks: { title: string; path: string }[];
+}
+const { tracks } = Astro.props;
+---
+
+<ul class="flex flex-col space-y-4 mt-8">
+  {tracks.map((track, index) => (
+    <li class="text-center">
+      <a 
+        href={track.path} 
+        class="inline-block text-2xl text-blue-300 hover:text-white hover:scale-105 transform transition-all duration-200 ease-in-out tracking-wide"
+      >
+        {String(index + 1).padStart(2, '0')}. {track.title}
+      </a>
+    </li>
+  ))}
+</ul>

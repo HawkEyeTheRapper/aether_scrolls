@@ -1,0 +1,19 @@
+---
+import LyricPageLayout from '@/layouts/LyricPageLayout.astro';
+import TrackList from '@/components/TrackList.astro';
+
+const tracks = [
+  { title: "Full Disclosure (Album)", path: "/02_mixtape_sessions/01_full_disclosure" },
+  { title: "Behold A Pale Horse (Album)", path: "/02_mixtape_sessions/02_behold_a_pale_horse" },
+  { title: "Milabs (Album)", path: "/02_mixtape_sessions/03_milabs" },
+];
+---
+
+<LyricPageLayout
+  title="Singles"
+  album="01_singles"
+  artist="Hawk Eye The Rapper"
+  lyrics=""
+>
+  <TrackList {tracks} />
+</LyricPageLayout>

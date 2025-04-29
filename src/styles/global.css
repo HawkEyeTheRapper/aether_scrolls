@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+body {
+  background-image: url('https://onebucket.omniversal.cloud/symbols/reincarnated2resist_emblem/Reincarnated_Hawk_Emblem.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Optional: Create a reusable readable container */
+.readable-container {
+  background-color: rgba(0, 0, 0, 0.7); /* semi-transparent dark overlay */
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 1000px;
+  margin: 0 auto;
+}

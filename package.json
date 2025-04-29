@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "aether_scrolls",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -9,6 +9,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.7.8"
+    "@astrojs/cloudflare": "^12.5.1",
+    "@tailwindcss/vite": "^4.1.4",
+    "astro": "^5.7.8",
+    "tailwindcss": "^4.1.4"
   }
 }

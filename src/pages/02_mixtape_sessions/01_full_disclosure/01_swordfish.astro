@@ -1,0 +1,19 @@
+---
+import LyricPageLayout from '@/layouts/LyricPageLayout.astro';
+
+const lyricsUrl = "https://s3.omniversalmedia.app/HAWK-ARS-00/02_mixtape_sessions/01_full_disclosure/01_swordfish.md";
+
+const response = await fetch(lyricsUrl);
+const lyrics = await response.text();
+
+const commentary = `...`;
+---
+<LyricPageLayout
+  title="Swordfish"
+  album="Full Disclosure"
+  artist="Hawk Eye"
+  upc="885007879183"
+  releaseDate="2020-03-01"
+  commentary={commentary}
+  lyrics={lyrics}
+/>
