@@ -1,0 +1,27 @@
+---
+import { supabase } from '@/utils/supabase'
+
+const { data: tracks, error } = await supabase
+  .from('arsenal')
+  .select('*')
+  .order('track_number', { ascending: true })
+
+if (error) {
+  console.error('Failed to fetch arsenal:', error)
+}
+---
+
+<html>
+  <head><title>Arsenal</title></head>
+  <body>
+    <h1>Track Archive</h1>
+    <ul>
+      {tracks?.map(track => (
+        <li>
+          <strong>{track.track_number}. {track.track_title}</strong><br />
+          <a href={track.url} target="_blank">{track.file_name}</a>
+        </li>
+      ))}
+    </ul>
+  </body>
+</html>
