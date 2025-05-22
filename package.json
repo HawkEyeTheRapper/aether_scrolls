@@ -9,12 +9,13 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^12.5.1",
-    "@astrojs/mdx": "^4.2.5",
-    "@astrojs/sitemap": "^3.3.1",
+    "@astrojs/cloudflare": "^12.5.3",
+    "@astrojs/db": "^0.14.14",
+    "@astrojs/mdx": "^4.2.6",
+    "@astrojs/sitemap": "^3.4.0",
     "@supabase/supabase-js": "^2.49.4",
     "@tailwindcss/vite": "^4.1.4",
-    "astro": "^5.7.8",
+    "astro": "^5.7.13",
     "tailwindcss": "^4.1.4"
   }
 }

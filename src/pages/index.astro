@@ -1,19 +1,28 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import LyricPageLayout from '../layouts/LyricPageLayout.astro';
 import { supabase } from '../db/supabase';
 
 const { data, error } = await supabase.from("todos").select('*');
 ---
 
-{
-  (
-    <ul>
-      {data.map((entry) => (
-        <li>{entry.name}</li>
-      ))}
-    </ul>
-  )
-}
+<LyricPageLayout>
+  <h1>Welcome to the Lyric Vault</h1>
+  <p style="margin-bottom: 2rem;">Explore the branches of the Hawk Eye Archive:</p>
+
+  {/* Conditionally render the list only if data is not null */}
+  {
+    data && data.length > 0 ? (
+      <ul>
+        {data.map((entry) => (
+          <li>{entry.name}</li>
+        ))}
+      </ul>
+    ) : error ? (
+        <p>Error fetching data: {error.message}</p>
+      ) : (
+        <p>No data available.</p>
+      )
+  }
 ---
 <Layout>
   <h1>Welcome to the Lyric Vault</h1>
@@ -37,4 +46,4 @@ const { data, error } = await supabase.from("todos").select('*');
   <footer style="margin-top: 4rem;">
     <p>© Hawk Eye. All rights reserved.</p>
   </footer>
-</Layout>
+</LyricPageLayout>
