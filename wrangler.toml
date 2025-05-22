@@ -7,8 +7,3 @@ binding = "arsenal_db"  # <-- MUST match what your code uses (lowercase)
 database_name = "arsenal_db"
 database_id = "ce7671fc-94b4-4dee-9ca0-53300c428fa2"
 
-[[r2_buckets]]
-binding = "ARSENAL_BUCKET"
-bucket_name = "hawk-ars-00"
-preview_bucket_name = "hawk-ars-00-preview"
-

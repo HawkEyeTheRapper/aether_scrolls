@@ -5,6 +5,7 @@
   ],
   "exclude": [
     "/_astro/*",
+    "/.assetsignore",
     "/favicon.svg"
   ]
 }
