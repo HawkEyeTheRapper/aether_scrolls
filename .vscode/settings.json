@@ -1,4 +1,8 @@
 {
     "IDX.aI.enableInlineCompletion": true,
-    "IDX.aI.enableCodebaseIndexing": true
+    "IDX.aI.enableCodebaseIndexing": true,
+    "IDX.corgiMode": true,
+    "astro.content-intellisense": true,
+    "astro.trace.server": "verbose",
+    "astro.updateImportsOnFileMove.enabled": true
 }

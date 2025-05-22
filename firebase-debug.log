@@ -1,0 +1,53 @@
+[debug] [2025-05-22T22:35:43.073Z] ----------------------------------------------------------------------
+[debug] [2025-05-22T22:35:43.076Z] Command:       /nix/store/rbdrkcs5kkwpalxcd7c6bnm33lk2955n-nodejs-20.19.0/bin/node /nix/store/x1y0l2xj62jgmz6csprhhqzibvdggdpk-firebase-tools-14.3.1/lib/node_modules/firebase-tools/lib/bin/firebase.js init hosting
+[debug] [2025-05-22T22:35:43.077Z] CLI Version:   14.3.1
+[debug] [2025-05-22T22:35:43.077Z] Platform:      linux
+[debug] [2025-05-22T22:35:43.077Z] Node Version:  v20.19.0
+[debug] [2025-05-22T22:35:43.078Z] Time:          Thu May 22 2025 22:35:43 GMT+0000 (Coordinated Universal Time)
+[debug] [2025-05-22T22:35:43.078Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-05-22T22:35:43.084Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-22T22:35:43.085Z] > authorizing via signed-in user (hawkeyetherapper@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/user/aether_scrolls
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-05-22T22:36:40.306Z] No OAuth tokens found
+[debug] [2025-05-22T22:36:40.307Z] No OAuth tokens found
+[debug] [2025-05-22T22:36:40.307Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-22T22:36:40.308Z] > authorizing via signed-in user (hawkeyetherapper@gmail.com)
+[debug] [2025-05-22T22:36:40.314Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-05-22T22:36:40.626Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-05-22T22:36:40.626Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project weighty-nation-421402 (Omniversal Media LLC) 
+[info] 
+=== Hosting Setup
+[debug] [2025-05-22T22:36:42.504Z] No OAuth tokens found
+[debug] [2025-05-22T22:36:42.505Z] No OAuth tokens found
+[debug] [2025-05-22T22:36:42.505Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-22T22:36:42.505Z] > authorizing via signed-in user (hawkeyetherapper@gmail.com)
+[debug] [2025-05-22T22:36:42.505Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/weighty-nation-421402 [none]
+[debug] [2025-05-22T22:36:42.807Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/weighty-nation-421402 200
+[debug] [2025-05-22T22:36:42.807Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/weighty-nation-421402 {"projectId":"weighty-nation-421402","projectNumber":"962173317336","displayName":"Omniversal Media LLC","name":"projects/weighty-nation-421402","resources":{"hostingSite":"weighty-nation-421402"},"state":"ACTIVE","etag":"1_99a0f678-50d2-40d6-a716-bd522761ad0e"}
+[info] 
+[info] i  Detected a .git folder at /home/user/aether_scrolls 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=773947151&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
