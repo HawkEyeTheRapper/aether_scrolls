@@ -1,6 +1,6 @@
 globalThis.process ??= {}; globalThis.process.env ??= {};
 import { c as createComponent, r as renderComponent, b as renderTemplate } from '../../../chunks/astro/server_BLfuIyYt.mjs';
-import { $ as $$LyricPageLayout } from '../../../chunks/LyricPageLayout_DjwnF3Fn.mjs';
+import { $ as $$LyricPageLayout } from '../../../chunks/LyricPageLayout_BH9-t5Lw.mjs';
 export { renderers } from '../../../renderers.mjs';
 
 const $$01Swordfish = createComponent(async ($$result, $$props, $$slots) => {

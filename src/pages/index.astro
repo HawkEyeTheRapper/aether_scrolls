@@ -1,11 +1,11 @@
 ---
-import LyricPageLayout from '../layouts/LyricPageLayout.astro';
+import Layout from '../layouts/Layout.astro';
 import { supabase } from '../db/supabase';
 
 const { data, error } = await supabase.from("todos").select('*');
 ---
 
-<LyricPageLayout>
+<Layout>
   <h1>Welcome to the Lyric Vault</h1>
   <p style="margin-bottom: 2rem;">Explore the branches of the Hawk Eye Archive:</p>
 
@@ -23,11 +23,6 @@ const { data, error } = await supabase.from("todos").select('*');
         <p>No data available.</p>
       )
   }
----
-<Layout>
-  <h1>Welcome to the Lyric Vault</h1>
-  <p style="margin-bottom: 2rem;">Explore the branches of the Hawk Eye Archive:</p>
-
   <ul style="list-style: none; padding: 0;">
     <li style="margin-bottom: 1rem;">
       <a href="/01_singles/" style="color: #0af; font-size: 1.25rem;">Singles</a>
@@ -46,4 +41,4 @@ const { data, error } = await supabase.from("todos").select('*');
   <footer style="margin-top: 4rem;">
     <p>© Hawk Eye. All rights reserved.</p>
   </footer>
-</LyricPageLayout>
+</Layout>

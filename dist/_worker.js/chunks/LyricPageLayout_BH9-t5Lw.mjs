@@ -1,6 +1,6 @@
 globalThis.process ??= {}; globalThis.process.env ??= {};
 import { c as createComponent, a as createAstro, r as renderComponent, b as renderTemplate, a0 as maybeRenderHead, a1 as addAttribute } from './astro/server_BLfuIyYt.mjs';
-import { $ as $$Layout } from './Layout_zoS-BjVo.mjs';
+import { $ as $$Layout } from './Layout_SbYa-sXA.mjs';
 
 const $$Astro = createAstro();
 const $$LyricPageLayout = createComponent(($$result, $$props, $$slots) => {

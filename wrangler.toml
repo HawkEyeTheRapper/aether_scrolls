@@ -1,3 +1,4 @@
+toml
 name = "aether-scrolls"
 account_id = "74b94b7ffc15701b77e53f81bea03813"
 compatibility_date = "2025-04-29"
@@ -5,5 +6,9 @@ compatibility_date = "2025-04-29"
 [[ d1_databases ]]
 binding = "arsenal_db"  # <-- MUST match what your code uses (lowercase)
 database_name = "arsenal_db"
-database_id = "ce7671fc-94b4-4dee-9ca0-53300c428fa2"
+database_id = "e654f47a-2c83-4d6e-8767-6ae72f075426"
 
+[[r2_buckets]]
+binding = "omniversal-bucket"
+bucket_name = "omniversal-bucket"
+preview_bucket_name = "omniversal-bucket-preview"
